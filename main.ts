@@ -56,6 +56,4 @@ radio.onReceivedValue(function (name, value) {
         led.toggle(4, 2)
     }
 })
-basic.forever(function () {
-	
-})
+radio.setGroup(42)
