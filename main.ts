@@ -4,6 +4,3 @@ radio.onReceivedValue(function (name, value) {
     serial.writeValue("x", value)
 })
 radio.setGroup(42)
-basic.forever(function () {
-	
-})
