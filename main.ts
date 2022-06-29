@@ -1,5 +1,6 @@
 radio.onReceivedValue(function (name, value) {
     pins.servoWritePin(AnalogPin.P0, value)
+    serial.writeValue("x", value)
     if (value > 26 && value < 50) {
         basic.showLeds(`
             # . . . .
@@ -57,3 +58,6 @@ radio.onReceivedValue(function (name, value) {
     }
 })
 radio.setGroup(42)
+basic.forever(function () {
+	
+})
